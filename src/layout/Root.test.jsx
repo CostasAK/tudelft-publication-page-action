@@ -6,6 +6,6 @@ import { Root } from "./Root";
 describe("Simple working test", () => {
   it("The title is visible", () => {
     render(<Root />);
-    expect(screen.getByText(/Vite \+ React/i)).toBeDefined();
+    expect(screen.getByText(/Publication Title/i)).toBeDefined();
   });
 });
