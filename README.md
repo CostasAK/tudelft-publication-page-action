@@ -11,14 +11,6 @@ UNDER CONSTRUCTION
 
 - [Contents](#contents)
 - [Usage](#usage)
-  - [Project Setup](#project-setup)
-    - [Metadata](#metadata)
-    - [GitHub Pages](#github-pages)
-    - [Cloudflare Pages](#cloudflare-pages)
-  - [GitHub Repository Setup](#github-repository-setup)
-    - [Auto-merge Dependabot PRs](#auto-merge-dependabot-prs)
-    - [Main branch protection](#main-branch-protection)
-- [Suggestions](#suggestions)
 
 ## Usage
 
