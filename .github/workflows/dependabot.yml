@@ -25,6 +25,7 @@ jobs:
       - id: reviews
         env:
           pr: ${{ github.event.number }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           state=$(gh pr view "$pr" \
               --repo "$GITHUB_REPOSITORY"
