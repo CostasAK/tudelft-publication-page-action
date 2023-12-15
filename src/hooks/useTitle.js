@@ -6,5 +6,5 @@ export const useTitle = () => {
 
   const title = !isLoading && new Cite(data).get()?.[0]?.title;
 
-  return !isLoading && title;
+  return (!isLoading && title) || import.meta.env.VITE_APP_NAME;
 };
