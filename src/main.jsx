@@ -9,6 +9,8 @@ import { queryClient } from "./utils/queryClient";
 
 const rootElement = document.getElementById("root");
 
+queryClient.prefetchQuery({ queryKey: ["bib"] });
+
 createRoot(rootElement).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
