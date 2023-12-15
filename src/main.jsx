@@ -1,9 +1,8 @@
 import "./index.css";
 
-import { QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { RenderWrapper } from "./components/RenderWrapper";
 import { Root } from "./layout/Root";
 import { queryClient } from "./utils/queryClient";
 
@@ -13,9 +12,8 @@ queryClient.prefetchQuery({ queryKey: ["bib"] });
 
 createRoot(rootElement).render(
   <StrictMode>
-    <QueryClientProvider client={queryClient}>
+    <RenderWrapper>
       <Root />
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+    </RenderWrapper>
   </StrictMode>,
 );

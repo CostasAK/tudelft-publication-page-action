@@ -1,9 +1,19 @@
 import clsx from "clsx";
+import { Helmet } from "react-helmet-async";
+import { useTitle } from "../hooks/useTitle";
 
-export const Header = () => (
-  <header className={clsx("py-12", "px-8", "bg-cyan")}>
-    <h1 className={clsx("font-serif", "text-white", "text-5xl", "text-center")}>
-      {import.meta.env.VITE_APP_NAME}
-    </h1>
-  </header>
-);
+export const Header = () => {
+  const title = useTitle();
+  return (
+    <header className={clsx("py-12", "px-8", "bg-cyan")}>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+      <h1
+        className={clsx("font-serif", "text-white", "text-5xl", "text-center")}
+      >
+        {title}
+      </h1>
+    </header>
+  );
+};

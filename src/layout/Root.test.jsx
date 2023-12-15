@@ -6,6 +6,6 @@ import { Root } from "./Root";
 describe("Simple working test", () => {
   it("The title is visible", () => {
     render(<Root />);
-    expect(screen.getByText(/Publication Title/i)).toBeDefined();
+    expect(screen.getByRole("heading", { level: 1 })).toBeDefined();
   });
 });
