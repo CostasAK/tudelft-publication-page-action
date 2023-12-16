@@ -10,13 +10,7 @@ export const Header = () => {
         <title>{title}</title>
       </Helmet>
       <h1
-        className={clsx(
-          "font-serif",
-          "text-white",
-          "text-5xl",
-          "text-center",
-          "leading-tight",
-        )}
+        className={clsx("font-serif", "text-white", "text-5xl", "text-center")}
       >
         {title}
       </h1>

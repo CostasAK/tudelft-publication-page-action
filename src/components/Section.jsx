@@ -4,18 +4,7 @@ import PropTypes from "prop-types";
 const SectionHeading = ({ children }) => {
   if (!children) return null;
 
-  return (
-    <h2
-      className={clsx(
-        "font-serif",
-        "text-[1.9375rem]",
-        "leading-[1.3]",
-        "mb-4",
-      )}
-    >
-      {children}
-    </h2>
-  );
+  return <h2 className={clsx("font-serif", "text-3xl", "mb-4")}>{children}</h2>;
 };
 
 SectionHeading.propTypes = {
