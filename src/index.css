@@ -6,3 +6,7 @@ html {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+
+* {
+  @apply max-w-full;
+}
