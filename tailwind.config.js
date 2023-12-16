@@ -8,6 +8,7 @@ export default {
         serif: ["Roboto Slab Medium", "Roboto Slab", "serif"],
       },
       fontSize: {
+        base: ["1rem", { lineHeight: "1.625", fontWeight: "400" }],
         "3xl": ["1.9375rem", { lineHeight: "1.3", fontWeight: "500" }],
         "5xl": ["3rem", { lineHeight: "1.25", fontWeight: "500" }],
       },
