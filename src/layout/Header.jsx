@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import { Helmet } from "react-helmet-async";
-import { useTitle } from "../hooks/useTitle";
+import { cslJson } from "../constants/cslJson";
 
 export const Header = () => {
-  const title = useTitle();
+  const title = cslJson.title;
   return (
     <header className={clsx("py-12", "px-8", "bg-cyan")}>
       <Helmet>
