@@ -11,7 +11,7 @@ export const Root = () => {
         "grid",
         "grid-cols-1",
         "grid-rows-[auto_1fr_auto]",
-        "min-h-[100dvh]",
+        "min-h-dvh",
       )}
     >
       <Header />
