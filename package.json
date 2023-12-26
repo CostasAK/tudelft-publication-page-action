@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "clean": "pnpm --silent dlx rimraf dist node_modules",
+    "sync": "pnpm prune && pnpm install",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --ignore-unknown --check .",
     "format-write": "prettier --ignore-unknown --write .",
