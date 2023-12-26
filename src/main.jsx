@@ -3,14 +3,18 @@ import "./index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RenderWrapper } from "./components/RenderWrapper";
-import { Root } from "./layout/Root";
+import { Footer } from "./layout/Footer";
+import { Header } from "./layout/Header";
+import { Main } from "./layout/Main";
 
 const rootElement = document.getElementById("root");
 
 createRoot(rootElement).render(
   <StrictMode>
     <RenderWrapper>
-      <Root />
+      <Header />
+      <Main />
+      <Footer />
     </RenderWrapper>
   </StrictMode>,
 );

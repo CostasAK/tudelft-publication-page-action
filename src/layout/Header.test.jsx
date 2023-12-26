@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "../utils/test-utils";
 
-import { Root } from "./Root";
+import { Header } from "./Header";
 
 describe("Simple working test", () => {
   it("The title is visible", () => {
-    render(<Root />);
+    render(<Header />);
     expect(screen.getByRole("heading", { level: 1 })).toBeDefined();
   });
 });
